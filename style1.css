@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+    border: 2px solid red;
+    position: relative;
+/* 
+    background-image: url(g_image.webp);
+    background-size: cover;
+    background-position: center;
+    opacity: .6; */
+}
+.bg_image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.player_turn{
+
+ margin-top: 50px;
+position: relative;
+z-index: 10;
+/* border: 2px solid red; */
+
+padding: 10px;
+background-color: rgb(221, 227, 227 , .3);
+border-radius: 10px;
+}
+
+.tic_tac_toe_container{
+    margin-top: 50px;
+    /* border: 2px solid red; */
+   position: relative ;
+    z-index: 10; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tic_tac_toe{
+    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.box{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.btn_container{
+    position: relative ;
+    z-index: 10; 
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    padding: 10px;
+background-color: rgb(221, 227, 227 , .3);
+border-radius: 10px;
+/* border: 2px solid red; */
+color: black;
+display: none;
+border: none;
+cursor: pointer;
+}
+
+.btn_active{
+    display: flex;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+.box7, .box8{
+    border-right: 2px solid white;
+}
+.win{
+    background-color: green;
+}
