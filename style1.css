@@ -27,6 +27,17 @@ body{
 
 }
 
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+
 .player{
     display: flex;
     justify-content: center;
